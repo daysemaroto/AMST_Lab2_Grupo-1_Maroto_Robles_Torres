@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calendario"
+    android:orientation="vertical"
+    android:background="@color/design_default_color_primary_dark">
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marca la fecha"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textSize="25sp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center_horizontal">
+    </TextView>
+
+    <LinearLayout
+        android:layout_marginTop="54dp"
+        android:background="#FFF"
+        android:layout_marginLeft="44dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp">
+
+        </CalendarView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginLeft="120dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Guardar cita"
+        android:layout_gravity="center_vertical"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="140dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Salir"
+        android:layout_gravity="center_vertical"
+        >
+    </Button>
+
+</LinearLayout>
