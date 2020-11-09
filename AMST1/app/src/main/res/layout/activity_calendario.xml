@@ -13,12 +13,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/myDate"
-        android:text="Tarea"
-        android:textSize="45dp"
+        android:text="Tarea programada 20/11/2020"
+        android:textSize="20dp"
         android:textColor="@color/black"
         android:layout_gravity="center_vertical"
         android:layout_marginTop="65dp"
-        android:layout_marginLeft="120dp">
+        android:layout_marginLeft="55dp">
     </TextView>
 
     <LinearLayout
@@ -37,33 +37,16 @@
     </LinearLayout>
 
     <Button
-
-        android:id="@+id/btnSave"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
-        android:layout_marginLeft="120dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:text="Guardar cita"
-        android:layout_gravity="center_vertical"
-        >
-    </Button>
-
-    <Button
         android:id="@+id/btnSalir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="140dp"
-        android:paddingLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="150dp"
+        android:paddingLeft="35dp"
         android:paddingRight="30dp"
         android:text="Salir"
         android:layout_gravity="center_vertical">
 
     </Button>
-
-
-
 
 </LinearLayout>
