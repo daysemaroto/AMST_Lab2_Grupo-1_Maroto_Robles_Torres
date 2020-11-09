@@ -40,8 +40,8 @@ public class calendario extends AppCompatActivity {
         myDate = (TextView) findViewById(R.id.myDate);
 
         final ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(false);
-        actionBar.setTitle(null);
+        //actionBar.setDisplayHomeAsUpEnabled(false);
+        //actionBar.setTitle(null);
 
         btnSalir.setOnClickListener(new View.OnClickListener() {
             @Override
