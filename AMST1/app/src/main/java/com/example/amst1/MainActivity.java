@@ -10,16 +10,39 @@ import com.getbase.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
     FloatingActionButton fltCal;
+    FloatingActionButton fltYtb;
+    FloatingActionButton fltMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         fltCal = (FloatingActionButton)findViewById(R.id.fltCal);
+        fltYtb = (FloatingActionButton)findViewById(R.id.fltYtb);
+        fltMap= (FloatingActionButton)findViewById(R.id.fltMap);
+
+
+
         fltCal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),calendario.class);
+                startActivity(i);
+            }
+        });
+
+        fltYtb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),youtube.class);
+                startActivity(i);
+            }
+        });
+
+        fltMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),MapsActivity.class);
                 startActivity(i);
             }
         });
