@@ -20,8 +20,8 @@ public class graficoLineal extends AppCompatActivity {
 
     LineChartView lineChartView;
     String[] axisData = {"Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept",
-            "Oct", "Nov", "Dec"};
-    int[] yAxisData = {50, 20, 15, 30, 20, 60, 15, 40, 45, 10, 90, 18};
+            "Oct"};
+    int[] yAxisData = {50, 20, 15, 30, 20, 60, 15, 40, 45, 10};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +64,7 @@ public class graficoLineal extends AppCompatActivity {
 
         lineChartView.setLineChartData(data);
         Viewport viewport = new Viewport(lineChartView.getMaximumViewport());
-        viewport.top = 100;
+        viewport.top = 61;
         lineChartView.setMaximumViewport(viewport);
         lineChartView.setCurrentViewport(viewport);
 

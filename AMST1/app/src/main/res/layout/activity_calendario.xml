@@ -1,32 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:gravity="center"
-    android:orientation="vertical"
+    android:background="#9F5DA6D6"
     tools:context=".calendario">
 
-
-    <TextView
-        android:id="@+id/myDate"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
-        android:layout_marginBottom="30dip"
         android:gravity="center"
-        android:text="Tarea programada 20/11/2020"
-        android:textColor="@color/black"
-        android:textSize="20dp"></TextView>
+        android:orientation="vertical">
 
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="wrap_content"
-        android:layout_height="320dp"
-        android:background="#FFFF">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Calendario"
+            android:textColor="#273688"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-    </CalendarView>
+        <TextView
+            android:id="@+id/myDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="20dip"
+            android:gravity="center"
+            android:text="Tarea programada 20/11/2020"
+            android:textColor="@color/black"
+            android:textSize="20dp"></TextView>
 
-</LinearLayout>
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+        </CalendarView>
+
+    </LinearLayout>
+</ScrollView>

@@ -19,7 +19,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_toys_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AMST1">
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
         <activity android:name=".splash"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>

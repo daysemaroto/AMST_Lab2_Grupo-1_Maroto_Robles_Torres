@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#66FFEB3B"
+    android:fillViewport="true"
     tools:context=".graficoLineal">
 
-    <lecho.lib.hellocharts.view.LineChartView
-        android:id="@+id/chart"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="30dip"
-        android:layout_marginTop="30dip"
-        android:layout_marginEnd="30dip"
-        android:layout_marginBottom="30dip"
-        android:paddingTop="10dip" />
+        android:background="#66FFEB3B"
+        android:orientation="vertical">
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Gráfico Lineal"
+            android:textColor="#634E0C"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="619dp"
+            android:layout_marginStart="30dip"
+            android:layout_marginTop="30dip"
+            android:layout_marginEnd="30dip"
+            android:layout_marginBottom="30dip"
+            android:paddingTop="10dip" />
+
+    </LinearLayout>
+</ScrollView>

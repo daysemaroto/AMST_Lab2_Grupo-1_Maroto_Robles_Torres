@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:gravity="bottom"
     tools:context=".MainActivity">
 
 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:gravity="fill_vertical"
+    android:orientation="vertical"
+    android:overScrollMode="always">
+
     <com.getbase.floatingactionbutton.FloatingActionsMenu
         android:id="@+id/fltMenu"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_labels_margin">
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fltYtb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:fab_size="normal"
+            android:src="@drawable/video"
             app:fab_colorNormal="#F44336"
             app:fab_colorPressed="#DCBBB8"
-            android:src="@drawable/video"
-            >
-        </com.getbase.floatingactionbutton.FloatingActionButton>
+            app:fab_size="normal"></com.getbase.floatingactionbutton.FloatingActionButton>
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fltCal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:fab_size="normal"
+            android:src="@drawable/calendario"
             app:fab_colorNormal="#3F51B5"
             app:fab_colorPressed="#B9BFE3"
-            android:src="@drawable/calendario"
-            >
-        </com.getbase.floatingactionbutton.FloatingActionButton>
+            app:fab_size="normal"></com.getbase.floatingactionbutton.FloatingActionButton>
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fltMap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:fab_size="normal"
+            android:src="@drawable/mapa"
             app:fab_colorNormal="#009688"
             app:fab_colorPressed="#D2E4E3"
-            android:src="@drawable/mapa"
-            >
-        </com.getbase.floatingactionbutton.FloatingActionButton>
+            app:fab_size="normal"></com.getbase.floatingactionbutton.FloatingActionButton>
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fltGraph"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:fab_size="normal"
+            android:src="@drawable/imagen"
             app:fab_colorNormal="#FFEB3B"
             app:fab_colorPressed="#E6E2BC"
-            android:src="@drawable/imagen"
-            >
-        </com.getbase.floatingactionbutton.FloatingActionButton>
+            app:fab_size="normal"></com.getbase.floatingactionbutton.FloatingActionButton>
 
 
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="277dp"
-        android:layout_height="621dp"
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginRight="30dip"
         android:layout_weight="1"
-        android:paddingRight="40dip"
-        android:tint="#B9FFFFFF"
+        android:tint="#8AFFFFFF"
         fab:srcCompat="@drawable/ic_rompecabezas" />
 
 
