@@ -45,13 +45,6 @@
             android:layout_height="wrap_content"
             android:text="Buscar" />
 
-        <Button
-            android:id="@+id/btnSalir"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dip"
-            android:layout_marginLeft="10dip"
-            android:text="Salir" />
     </LinearLayout>
 
 

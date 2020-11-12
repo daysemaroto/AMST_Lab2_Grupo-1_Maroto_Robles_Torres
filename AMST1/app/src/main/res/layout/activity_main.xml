@@ -62,5 +62,15 @@
 
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="277dp"
+        android:layout_height="621dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:paddingRight="40dip"
+        android:tint="#B9FFFFFF"
+        fab:srcCompat="@drawable/ic_rompecabezas" />
+
 
 </LinearLayout>

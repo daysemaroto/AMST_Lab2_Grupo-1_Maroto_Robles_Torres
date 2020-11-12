@@ -20,7 +20,7 @@ import java.util.Vector;
 
 public class youtube extends AppCompatActivity {
     private EditText txtLink;
-    private Button btnBuscar, btnSalir;
+    private Button btnBuscar;
     private LinearLayout layout;
 
 
@@ -34,7 +34,7 @@ public class youtube extends AppCompatActivity {
 
         //Referencias a los controles
         btnBuscar = (Button) findViewById(R.id.btnBuscar);
-        btnSalir= (Button) findViewById(R.id.btnSalir);
+
         txtLink= (EditText)findViewById(R.id.txtLink);
         layout= (LinearLayout)findViewById(R.id.layoutPrincipal);
 
@@ -79,13 +79,6 @@ public class youtube extends AppCompatActivity {
             }
         });
 
-        btnSalir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(i);
-            }
-        });
     }
 
     public String obtenerIdVideo(String link){

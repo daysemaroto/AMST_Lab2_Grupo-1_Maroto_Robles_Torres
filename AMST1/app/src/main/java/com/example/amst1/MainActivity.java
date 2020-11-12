@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     FloatingActionButton fltCal;
     FloatingActionButton fltYtb;
     FloatingActionButton fltMap;
+    FloatingActionButton fltGraph;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         fltCal = (FloatingActionButton)findViewById(R.id.fltCal);
         fltYtb = (FloatingActionButton)findViewById(R.id.fltYtb);
         fltMap= (FloatingActionButton)findViewById(R.id.fltMap);
+        fltGraph= (FloatingActionButton)findViewById(R.id.fltGraph);
 
 
 
@@ -43,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),MapsActivity.class);
+                startActivity(i);
+            }
+        });
+
+        fltGraph.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),graficoLineal.class);
                 startActivity(i);
             }
         });

@@ -21,7 +21,6 @@ import java.util.Locale;
 public class calendario extends AppCompatActivity {
     CalendarView calendarView;
     TextView myDate;
-    Button btnSalir;
     Calendar calendar;
     //private SimpleDateFormat dateFormatMonth = new SimpleDateFormat("MMM- yyy", Locale.getDefault());
 
@@ -30,7 +29,7 @@ public class calendario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendario);
 
-        btnSalir = (Button) findViewById(R.id.btnSalir);
+
         calendarView = (CalendarView) findViewById(R.id.calendarView);
         calendar = Calendar.getInstance();
         calendar.set(Calendar.MONTH, Calendar.NOVEMBER);
@@ -39,17 +38,9 @@ public class calendario extends AppCompatActivity {
 
         myDate = (TextView) findViewById(R.id.myDate);
 
-        final ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(false);
-        actionBar.setTitle(null);
 
-        btnSalir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(i);
-            }
-        });
+
+
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
